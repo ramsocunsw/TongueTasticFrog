@@ -15,14 +15,14 @@ void loop() {
 //PLEASE NOTE: This code can only be used on continuous mirco servo motors!
 // Clock-wise rotation
 servo.write(30);   
-delay(3000);
+delay(3000); // 3 seconds
 // stop
 servo.write(90);  
-delay(2000);
+delay(2000); // 2 seconds
 // Counter Clock-wise rotation
 servo.write(150); 
-delay(3000);
+delay(3000); // 3 seconds
 // Stop
 servo.write(90);  
-delay(2000);
+delay(2000); // 2 seconds
 }
