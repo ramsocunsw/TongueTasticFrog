@@ -11,17 +11,18 @@ void setup() {
   servo.attach(servo_pin);
 }
 
-void loop() {
- for (int angle = 0; angle <= 359; angle++) {
-    servo.write(angle); 
-    delay(15);
-  }
-
-  delay(5000);
-
-  for (int angle = 180; angle >= 0; angle--) {
-    servo.write(angle); 
-    delay(15);
-  }
-  delay(5000);
+void loop() { 
+//PLEASE NOTE: This code can only be used on continuous mirco servo motors!
+// Clock-wise rotation
+servo.write(30);   
+delay(3000);
+// stop
+servo.write(90);  
+delay(2000);
+// Counter Clock-wise rotation
+servo.write(150); 
+delay(3000);
+// Stop
+servo.write(90);  
+delay(2000);
 }
